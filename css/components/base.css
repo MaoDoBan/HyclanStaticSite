@@ -10,8 +10,3 @@
   --cor-laranjada: #FFAE00;
   --cor-bg-button: #EE9D00;
 }
-
-body {
-  font-family: 'Roboto Slab', serif;
-  background-image: url('../../assets/img/bg.PNG');
-}
