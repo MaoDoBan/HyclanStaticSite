@@ -1,0 +1,17 @@
+.button {
+  background-color: var(--cor-laranjada);
+  color: var(--cor-branca);
+  padding: 20px 50px;
+  font-size: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 30px;
+  box-shadow: 0 4px 14px rgba(255, 174, 0, 0.4);
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--cor-bg-button);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(255, 174, 0, 0.5);
+}

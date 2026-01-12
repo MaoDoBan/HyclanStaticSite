@@ -1,0 +1,17 @@
+:root{
+  --cor-preta: #000;
+  --cor-branca: #fff;
+
+  --cor-deep-taupe: #7E6C6C;
+  --cor-cornflower-blue: #5C95FF;
+  --cor-uranian-blue: #B9E6FF;
+  --cor-light-coral: #F87575;
+  --cor-melon: #FFA9A3;
+  --cor-laranjada: #FFAE00;
+  --cor-bg-button: #EE9D00;
+}
+
+body {
+  font-family: 'Roboto Slab', serif;
+  background-image: url('../../assets/img/bg.PNG');
+}
