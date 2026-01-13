@@ -1,4 +1,99 @@
 .button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px 56px;
+
+  font-size: 48px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  color: #ffffff;
+
+  background:
+    linear-gradient(135deg,
+      #ff7a00 0%,
+      #ffb300 50%,
+      #ff7a00 100%
+    );
+
+  border-radius: 32px;
+  border: none;
+
+  box-shadow:
+    0 10px 30px rgba(255, 140, 0, 0.55),
+    0 0 0 0 rgba(255, 180, 0, 0.6);
+
+  text-shadow:
+    0 2px 6px rgba(0, 0, 0, 0.35);
+
+  cursor: pointer;
+  overflow: hidden;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+/* Borda luminosa */
+.button::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+
+  background: linear-gradient(
+    135deg,
+    #ffd36a,
+    #ff9f00,
+    #ffd36a
+  );
+
+  z-index: -1;
+  opacity: 0.9;
+}
+
+/* Efeito de brilho animado */
+.button::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -60%;
+  width: 50%;
+  height: 200%;
+
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.5),
+    transparent
+  );
+
+  transform: rotate(25deg);
+  transition: left 0.6s ease;
+}
+
+.button:hover::after {
+  left: 120%;
+}
+
+.button:hover {
+  transform: translateY(-4px) scale(1.02);
+
+  box-shadow:
+    0 16px 35px rgba(255, 140, 0, 0.75),
+    0 0 20px rgba(255, 180, 0, 0.8);
+}
+
+.button:active {
+  transform: translateY(-1px) scale(0.99);
+}
+
+
+/* .button {
   background-color: var(--cor-laranjada);
   color: var(--cor-branca);
   padding: 20px 50px;
@@ -8,10 +103,10 @@
   border-radius: 30px;
   box-shadow: 0 4px 14px rgba(255, 174, 0, 0.4);
   transition: all 0.3s ease;
-}
+} */
 
-.button:hover {
+/* .button:hover {
   background-color: var(--cor-bg-button);
   transform: translateY(-3px);
   box-shadow: 0 6px 20px rgba(255, 174, 0, 0.5);
-}
+} */
