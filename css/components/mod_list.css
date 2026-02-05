@@ -1,0 +1,39 @@
+/* .list {
+  width: 600px;
+  display: flex;
+  align-items: center;
+} */
+
+.list a {
+  display: flex;
+  align-items: center;
+  width: 600px;
+  margin-top: 12px;
+}
+
+.list img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  box-sizing: border-box;
+  padding: 12px;
+}
+
+.list h2 {
+  color: #fffbf0;
+  text-align: justify;
+}
+.list p {
+  color: #f0feff;
+}
+
+.mod-icon {
+  height: 96px;
+  width: 96px;
+  background-size: cover;
+  background-image: url('https://raw.githubusercontent.com/MaoDoBan/HyclanStaticSite/refs/heads/main/assets/img/ContainerFullPatch@2x.png');
+}
+
+.info {
+  margin-left: 12px;
+}
